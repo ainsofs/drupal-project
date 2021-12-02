@@ -58,7 +58,9 @@ jobs:
 
       - run: ./vendor/bin/drush site-install --verbose --yes --db-url=sqlite://tmp/site.sqlite
 
-      - run: ./vendor/bin/drush en gin admin_toolbar config_split --verbose --yes
+      - run: ./vendor/bin/drush theme:enable gin --verbose --yes
+
+      - run: ./vendor/bin/drush en admin_toolbar config_split --verbose --yes
 
       - run: ./vendor/bin/drush pm:security --verbose
 
