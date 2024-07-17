@@ -25,7 +25,6 @@
     ],
     "require": {
         "php": ">=8.1",
-        "ainsofs/drupal-base": "dev-main",
         "composer/installers": "^2.1",
         "cweagans/composer-patches": "^1.7",
         "drupal/core-composer-scaffold": "^10.2.0",
@@ -39,8 +38,7 @@
         "drupal/core-dev": "^10.2.0",
         "ergebnis/composer-normalize": "^2.42",
         "mglaman/drupal-check": "^1.2",
-        "phpcompatibility/php-compatibility": "^9.3",
-        "zaporylie/composer-drupal-optimizations": "^1.2"
+        "phpcompatibility/php-compatibility": "^9.3"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -64,7 +62,8 @@
             "ergebnis/composer-normalize": true,
             "oomphinc/composer-installers-extender": true,
             "php-http/discovery": true,
-            "phpstan/extension-installer": true
+            "phpstan/extension-installer": true,
+            "zaporylie/composer-drupal-optimizations": true
         },
         "discard-changes": true,
         "sort-packages": true
